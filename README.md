@@ -141,7 +141,7 @@ If you use this work in your research, please cite our paper:
 ```
 
 ## 📄 License
-This repository is released under the Apache 2.0 license as found in the [LICENSE](https://github.com/kiddo127/SKD/blob/main/LICENSE) file.
+This project is licensed under the Apache 2.0 License - see the [LICENSE](https://github.com/kiddo127/SKD/blob/main/LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 *   **Codebase:** Our work is based on the [DeiT (Data-efficient Image Transformers)](https://github.com/facebookresearch/deit) repository. We sincerely thank the authors for open-sourcing their excellent work.
