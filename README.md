@@ -7,6 +7,7 @@ This repository contains the official implementation of Stratified Knowledge-Den
 
 ## 📖 Overview
 Traditional approaches require training and maintaining multiple ViT variants for different resource constraints, which is computationally expensive and inefficient. Our method transforms a pre-trained ViT into a Stratified Knowledge-Density Super-Network, where knowledge is hierarchically organized across weights, allowing flexible extraction of sub-networks that retain maximal knowledge for varying model sizes.
+
 <img width="4487" height="3355" alt="overview" src="https://github.com/user-attachments/assets/ab707633-55cd-4e4b-8e04-6524fe707abb" />
 
 ## 🚀 Key Features
@@ -19,12 +20,21 @@ Traditional approaches require training and maintaining multiple ViT variants fo
 ## 🏗️ Method
 ### Weighted PCA for Attention Contraction (WPAC)
 WPAC concentrates knowledge into a compact set of critical weights through function-preserving transformations:
+
 <img width="7544" height="3318" alt="WPAC" src="https://github.com/user-attachments/assets/f705e47b-6584-4af0-a0b7-8b2e98cdc2b2" />
+
 - **Token-wise Weighted PCA**: Applies PCA to intermediate features with Taylor-based importance weighting
 - **Function Preservation**: Mathematical equivalence maintained through transformation matrix injection
 - **Information Concentration**: Knowledge condensed into top principal components
 
+**Progressive Importance-Aware Dropout (PIAD)**
+PIAD enhances knowledge stratification through adaptive dropout:
 
+<img width="5454" height="2475" alt="PIAD" src="https://github.com/user-attachments/assets/8055b200-764b-4c35-93b6-b256e2b94630" />
+
+- **Progressive Evaluation**: Dynamically assesses importance of weight groups
+- **Importance-Aware Sampling**: Lower dropout probabilities for important parameters
+- **Hierarchical Training**: Promotes knowledge stratification across different model sizes
 
 
 
