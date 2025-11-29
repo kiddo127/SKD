@@ -11,11 +11,11 @@ Traditional approaches require training and maintaining multiple ViT variants fo
 <img width="4487" height="3355" alt="overview" src="https://github.com/user-attachments/assets/ab707633-55cd-4e4b-8e04-6524fe707abb" />
 
 ## 🚀 Key Features
-- 🔄 One-shot Transformation: Convert pre-trained ViTs into scalable super-networks
-- 📊 Knowledge Stratification: Hierarchical organization of knowledge across parameter dimensions
-- ⚡ Zero-cost Extraction: Extract sub-networks of arbitrary sizes at O(1)cost
-- 🎯 State-of-the-Art Performance: Outperforms existing model compression and expansion methods
-- 🔧 Easy Deployment: Support for diverse resource constraints from edge devices to servers
+- 🔄 **One-shot Transformation**: Convert pre-trained ViTs into scalable super-networks
+- 📊 **Knowledge Stratification**: Hierarchical organization of knowledge across parameter dimensions
+- ⚡ **Zero-cost Extraction**: Extract sub-networks of arbitrary sizes at O(1)cost
+- 🎯 **State-of-the-Art Performance**: Outperforms existing model compression and expansion methods
+- 🔧 **Easy Deployment**: Support for diverse resource constraints from edge devices to servers
 
 ## 🏗️ Method
 ### Weighted PCA for Attention Contraction (WPAC)
@@ -27,7 +27,7 @@ WPAC concentrates knowledge into a compact set of critical weights through funct
 - **Function Preservation**: Mathematical equivalence maintained through transformation matrix injection
 - **Information Concentration**: Knowledge condensed into top principal components
 
-## Progressive Importance-Aware Dropout (PIAD)
+### Progressive Importance-Aware Dropout (PIAD)
 PIAD enhances knowledge stratification through adaptive dropout:
 
 <img width="5454" height="2475" alt="PIAD" src="https://github.com/user-attachments/assets/8055b200-764b-4c35-93b6-b256e2b94630" />
