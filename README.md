@@ -74,8 +74,44 @@ Results after fine-tuning for 30 epochs on ImageNet-1k.
 
 ## 💻 Usage
 1. **Convert Pre-trained Model to SKD Super-Network**
+
+Execute `run_reparam.sh` to apply Weighted PCA for Attention Contraction (WPAC) for reparameterizing the pre-trained model. Subsequently, run `run_train.sh` to train the reparameterized model into an SKD Super-Network using Progressive Importance-Aware Dropout (PIAD).
+
+**Note**: Replace the `--data-path` parameter with the path to your ImageNet2012 dataset (e.g., ImageNet2012/Data/CLS-LOC).
+
+**Example Commands**:
+```
+# Step 1: Reparameterize the model with WPAC
+sh run_reparam.sh
+
+# Step 2: Train the SKD Super-Network with PIAD
+sh run_train.sh
+```
+
 2. **Extract Sub-networks**
+
+Execute `run_test.sh` to comprehensively evaluate the performance of sub-networks extracted from the pre-trained SKD Super-Network. This script facilitates rapid validation across multiple model sizes and configurations without requiring fine-tuning.
+
+**Note**: Replace the `--data-path` parameter with the path to your ImageNet2012 dataset (e.g., ImageNet2012/Data/CLS-LOC).
+
+**Example Commands**:
+```
+# Evaluate sub-network performance directly from SKD Super-Network
+sh run_reparam.sh
+```
+
 3. **Fine-tuning (Optional)**
+
+Execute `run_train_peeled.sh` to perform fine-tuning on sub-networks extracted from the SKD Super-Network, optimizing their performance for specific tasks or datasets. This process enhances the capabilities of the pre-structured sub-networks while maintaining their efficient architecture.
+
+**Note**: Replace the `--data-path` parameter with the path to your ImageNet2012 dataset (e.g., ImageNet2012/Data/CLS-LOC).
+
+**Example Commands**:
+```
+# Fine-Tune extracted sub-networks for enhanced performance
+sh run_train_peeled.sh
+```
+
 
 ## 📝 Citation
 If you use this work in your research, please cite our paper:
