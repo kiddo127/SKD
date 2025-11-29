@@ -97,7 +97,7 @@ Execute `run_test.sh` to comprehensively evaluate the performance of sub-network
 **Example Commands**:
 ```
 # Evaluate sub-network performance directly from SKD Super-Network
-sh run_reparam.sh
+sh run_test.sh
 ```
 
 3. **Fine-tuning (Optional)**
