@@ -140,6 +140,9 @@ If you use this work in your research, please cite our paper:
 }
 ```
 
+## 📄 License
+This repository is released under the Apache 2.0 license as found in the [LICENSE](https://github.com/kiddo127/SKD/blob/main/LICENSE) file.
+
 ## 🙏 Acknowledgments
 *   **Codebase:** Our work is based on the [DeiT (Data-efficient Image Transformers)](https://github.com/facebookresearch/deit) repository. We sincerely thank the authors for open-sourcing their excellent work.
 *   **Funding:** This research was supported by the Jiangsu Science Foundation (BG2024036, BK20243012), the National Science Foundation of China (62125602, U24A20324, 92464301),  CAAI-Lenovo Blue Sky Research Fund, and the Fundamental Research Funds for the Central Universities (2242025K30024).
