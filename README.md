@@ -13,7 +13,7 @@ Traditional approaches require training and maintaining multiple ViT variants fo
 ## 🚀 Key Features
 - 🔄 **One-shot Transformation**: Convert pre-trained ViTs into scalable super-networks
 - 📊 **Knowledge Stratification**: Hierarchical organization of knowledge across parameter dimensions
-- ⚡ **Zero-cost Extraction**: Extract sub-networks of arbitrary sizes at O(1)cost
+- ⚡ **Zero-cost Extraction**: Extract sub-networks of arbitrary sizes at $\mathcal{O}(1)$ cost
 - 🎯 **State-of-the-Art Performance**: Outperforms existing model compression and expansion methods
 - 🔧 **Easy Deployment**: Support for diverse resource constraints from edge devices to servers
 
