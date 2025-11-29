@@ -38,7 +38,11 @@ PIAD enhances knowledge stratification through adaptive dropout:
 
 
 ## 📊 Performance
-Model Compression Results
+- Model Compression Results
+  |-|-|
+  |bac|
+  |
+- Sub-network Extract Results
 
 ## 💻 Usage
 
