@@ -7,12 +7,26 @@ This repository contains the official implementation of Stratified Knowledge-Den
 
 ## 📖 Overview
 Traditional approaches require training and maintaining multiple ViT variants for different resource constraints, which is computationally expensive and inefficient. Our method transforms a pre-trained ViT into a Stratified Knowledge-Density Super-Network, where knowledge is hierarchically organized across weights, allowing flexible extraction of sub-networks that retain maximal knowledge for varying model sizes.
-
 <img width="4487" height="3355" alt="overview" src="https://github.com/user-attachments/assets/ab707633-55cd-4e4b-8e04-6524fe707abb" />
 
 ## 🚀 Key Features
 - 🔄 One-shot Transformation: Convert pre-trained ViTs into scalable super-networks
 - 📊 Knowledge Stratification: Hierarchical organization of knowledge across parameter dimensions
-⚡ Zero-cost Extraction: Extract sub-networks of arbitrary sizes at O(1)cost
-🎯 State-of-the-Art Performance: Outperforms existing model compression and expansion methods
-🔧 Easy Deployment: Support for diverse resource constraints from edge devices to servers
+- ⚡ Zero-cost Extraction: Extract sub-networks of arbitrary sizes at O(1)cost
+- 🎯 State-of-the-Art Performance: Outperforms existing model compression and expansion methods
+- 🔧 Easy Deployment: Support for diverse resource constraints from edge devices to servers
+
+## 🏗️ Method
+### Weighted PCA for Attention Contraction (WPAC)
+WPAC concentrates knowledge into a compact set of critical weights through function-preserving transformations:
+<img width="7544" height="3318" alt="WPAC" src="https://github.com/user-attachments/assets/f705e47b-6584-4af0-a0b7-8b2e98cdc2b2" />
+- **Token-wise Weighted PCA**: Applies PCA to intermediate features with Taylor-based importance weighting
+- **Function Preservation**: Mathematical equivalence maintained through transformation matrix injection
+- **Information Concentration**: Knowledge condensed into top principal components
+
+
+
+
+
+
+
