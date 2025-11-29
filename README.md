@@ -73,7 +73,9 @@ Results after fine-tuning for 30 epochs on ImageNet-1k.
 
 
 ## 💻 Usage
-
+1. **Convert Pre-trained Model to SKD Super-Network**
+2. **Extract Sub-networks**
+3. **Fine-tuning (Optional)**
 
 ## 📝 Citation
 If you use this work in your research, please cite our paper:
