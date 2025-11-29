@@ -38,19 +38,8 @@ PIAD enhances knowledge stratification through adaptive dropout:
 
 
 ## 📊 Performance
-### Model Compression Results
-|Backbone|Method|MACs|Params|Top-1 Acc|
-|-|-|-|-|-|
-|***DeiT-Base***|***Original***|***16.88 G***|***86.57 M***|***81.80***|
-|DeiT-Base|SKD (Ours)|10.57 G|54.55 M|81.45|
-|DeiT-Base|SKD (Ours)|8.47 G|43.92 M|81.24|
-|***DeiT-Small***|***Original***|***4.26 G***|***22.05 M***|***79.83***|
-|DeiT-Small|SKD (Ours)|3.07 G|16.03 M|79.42|
-|DeiT-Small|SKD (Ours)|2.43 G|12.78 M|78.71|
-|***DeiT-Tiny***|***Original***|***1.08 G***|***5.72 M***|***72.14***|
-|DeiT-Tiny|SKD (Ours)|0.89 G|4.77 M|71.40|
-
-### Sub-network Extract Results
+### Sub-network Extraction Results
+Sub-networks are extracted from the trained SKD Super-Network and evaluated directly on ImageNet-1k **_without fine-tuning_**.
 |Backbone|Method|MACs|Top-1 Acc|
 |-|-|-|-|
 |***DeiT-Base***|***Original***|***16.88 G***|***81.8***|
@@ -68,6 +57,19 @@ PIAD enhances knowledge stratification through adaptive dropout:
 |DeiT-Tiny|SKD (Ours)|0.72 G|68.6|
 |DeiT-Tiny|SKD (Ours)|0.54 G|65.8|
 |DeiT-Tiny|SKD (Ours)|0.36 G|61.4|
+
+### Model Compression Results
+Results after fine-tuning for 30 epochs on ImageNet-1k.
+|Backbone|Method|MACs|Params|Top-1 Acc|
+|-|-|-|-|-|
+|***DeiT-Base***|***Original***|***16.88 G***|***86.57 M***|***81.80***|
+|DeiT-Base|SKD (Ours)|10.57 G|54.55 M|81.45|
+|DeiT-Base|SKD (Ours)|8.47 G|43.92 M|81.24|
+|***DeiT-Small***|***Original***|***4.26 G***|***22.05 M***|***79.83***|
+|DeiT-Small|SKD (Ours)|3.07 G|16.03 M|79.42|
+|DeiT-Small|SKD (Ours)|2.43 G|12.78 M|78.71|
+|***DeiT-Tiny***|***Original***|***1.08 G***|***5.72 M***|***72.14***|
+|DeiT-Tiny|SKD (Ours)|0.89 G|4.77 M|71.40|
 
 
 ## 💻 Usage
