@@ -41,7 +41,7 @@ PIAD enhances knowledge stratification through adaptive dropout:
 ### Model Compression Results
 |Backbone|Method|MACs|Params|Top-1 Acc|
 |-|-|-|-|-|
-|_DeiT-Small_|_Original_|_4.26 G_|_22.05 M_|_79.83_|
+<span style="background-color:#f0f0f0">_DeiT-Small_</span>|<span style="background-color:#f0f0f0">_Original_</span>|<span style="background-color:#f0f0f0">_4.26 G_</span>|<span style="background-color:#f0f0f0">_22.05 M_</span>|<span style="background-color:#f0f0f0">_79.83_</span>|
 |DeiT-Small|SKD (Ours)|3.07 G|16.03 M|79.42|
 |DeiT-Small|SKD (Ours)|2.43 G|12.78 M|78.71|
 ### Sub-network Extract Results
