@@ -41,10 +41,34 @@ PIAD enhances knowledge stratification through adaptive dropout:
 ### Model Compression Results
 |Backbone|Method|MACs|Params|Top-1 Acc|
 |-|-|-|-|-|
-<span style="background-color:#f0f0f0">_DeiT-Small_</span>|<span style="background-color:#f0f0f0">_Original_</span>|<span style="background-color:#f0f0f0">_4.26 G_</span>|<span style="background-color:#f0f0f0">_22.05 M_</span>|<span style="background-color:#f0f0f0">_79.83_</span>|
+|***DeiT-Base***|***Original***|***16.88 G***|***86.57 M***|***81.80***|
+|DeiT-Base|SKD (Ours)|10.57 G|54.55 M|81.45|
+|DeiT-Base|SKD (Ours)|8.47 G|43.92 M|81.24|
+|***DeiT-Small***|***Original***|***4.26 G***|***22.05 M***|***79.83***|
 |DeiT-Small|SKD (Ours)|3.07 G|16.03 M|79.42|
 |DeiT-Small|SKD (Ours)|2.43 G|12.78 M|78.71|
+|***DeiT-Tiny***|***Original***|***1.08 G***|***5.72 M***|***72.14***|
+|DeiT-Tiny|SKD (Ours)|0.89 G|4.77 M|71.40|
+
 ### Sub-network Extract Results
+|Backbone|Method|MACs|Top-1 Acc|
+|-|-|-|-|
+|***DeiT-Base***|***Original***|***16.88 G***|***81.8***|
+|DeiT-Base|SKD (Ours)|14.07 G|81.5|
+|DeiT-Base|SKD (Ours)|11.25 G|80.9|
+|DeiT-Base|SKD (Ours)|8.44 G|80.4|
+|DeiT-Base|SKD (Ours)|5.63 G|77.0|
+|***DeiT-Small***|***Original***|***4.26 G***|***79.8***|
+|DeiT-Small|SKD (Ours)|3.55 G|79.0|
+|DeiT-Small|SKD (Ours)|2.84 G|78.2|
+|DeiT-Small|SKD (Ours)|2.13 G|76.2|
+|DeiT-Small|SKD (Ours)|1.42 G|70.6|
+|***DeiT-Tiny***|***Original***|***1.08 G***|***72.1***|
+|DeiT-Tiny|SKD (Ours)|0.90 G|70.0|
+|DeiT-Tiny|SKD (Ours)|0.72 G|68.6|
+|DeiT-Tiny|SKD (Ours)|0.54 G|65.8|
+|DeiT-Tiny|SKD (Ours)|0.36 G|61.4|
+
 
 ## 💻 Usage
 
