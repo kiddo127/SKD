@@ -86,7 +86,7 @@ sh run_reparam.sh
 sh run_train.sh
 ```
 
-**Note**: Replace the `/path/to/ImageNet2012/Data/CLS-LOC` with the path to your ImageNet2012 dataset.
+**Note**: Replace `/path/to/ImageNet2012/Data/CLS-LOC` with the actual path to your ImageNet2012 dataset.
 
 ### 2. **Extract Sub-networks**
 
@@ -112,7 +112,7 @@ output/
 sh run_test.sh
 ```
 
-**Note**: Replace the `/path/to/ImageNet2012/Data/CLS-LOC` with the path to your ImageNet2012 dataset.
+**Note**: Replace `/path/to/ImageNet2012/Data/CLS-LOC` with the actual path to your ImageNet2012 dataset.
 
 
 ### 3. **Fine-tuning (Optional)**
@@ -125,7 +125,7 @@ Execute `run_train_peeled.sh` to perform fine-tuning on sub-networks extracted f
 sh run_train_peeled.sh
 ```
 
-**Note**: Replace the `/path/to/ImageNet2012/Data/CLS-LOC` with the path to your ImageNet2012 dataset.
+**Note**: Replace `/path/to/ImageNet2012/Data/CLS-LOC` with the actual path to your ImageNet2012 dataset.
 
 
 ## 📝 Citation
