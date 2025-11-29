@@ -27,7 +27,7 @@ WPAC concentrates knowledge into a compact set of critical weights through funct
 - **Function Preservation**: Mathematical equivalence maintained through transformation matrix injection
 - **Information Concentration**: Knowledge condensed into top principal components
 
-**Progressive Importance-Aware Dropout (PIAD)**
+## Progressive Importance-Aware Dropout (PIAD)
 PIAD enhances knowledge stratification through adaptive dropout:
 
 <img width="5454" height="2475" alt="PIAD" src="https://github.com/user-attachments/assets/8055b200-764b-4c35-93b6-b256e2b94630" />
