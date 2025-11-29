@@ -37,6 +37,23 @@ PIAD enhances knowledge stratification through adaptive dropout:
 - **Hierarchical Training**: Promotes knowledge stratification across different model sizes
 
 
+## 📊 Performance
+Model Compression Results
+
+## 💻 Usage
+
+
+## 📝 Citation
+If you use this work in your research, please cite our paper:
+
+```
+@inproceedings{li2026stratified,
+  title={Stratified Knowledge-Density Super-Network for Scalable Vision Transformers},
+  author={Li, Longhua and Qi, Lei and Geng, Xin},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2026}
+}
+```
 
 
 
