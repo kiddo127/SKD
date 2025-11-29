@@ -73,11 +73,9 @@ Results after fine-tuning for 30 epochs on ImageNet-1k.
 
 
 ## 💻 Usage
-1. **Convert Pre-trained Model to SKD Super-Network**
+### 1. **Convert Pre-trained Model to SKD Super-Network**
 
 Execute `run_reparam.sh` to apply Weighted PCA for Attention Contraction (WPAC) for reparameterizing the pre-trained model. Subsequently, run `run_train.sh` to train the reparameterized model into an SKD Super-Network using Progressive Importance-Aware Dropout (PIAD).
-
-**Note**: Replace the `--data-path` parameter with the path to your ImageNet2012 dataset (e.g., ImageNet2012/Data/CLS-LOC).
 
 **Example Commands**:
 ```
@@ -88,11 +86,25 @@ sh run_reparam.sh
 sh run_train.sh
 ```
 
-2. **Extract Sub-networks**
+**Note**: Replace the `--data-path` parameter with the path to your ImageNet2012 dataset (e.g., ImageNet2012/Data/CLS-LOC).
+
+### 2. **Extract Sub-networks**
 
 Execute `run_test.sh` to comprehensively evaluate the performance of sub-networks extracted from the pre-trained SKD Super-Network. This script facilitates rapid validation across multiple model sizes and configurations without requiring fine-tuning.
-
-**Note**: Replace the `--data-path` parameter with the path to your ImageNet2012 dataset (e.g., ImageNet2012/Data/CLS-LOC).
+We provide pre-trained SKD Super-Network checkpoints in [this link](https://drive.google.com/drive/folders/1qiLpmkatsIgyXJ-FkkIXxRrIJ0N3wR9G). After downloading, please place the files in the following directory structure under your project's root folder:
+```
+output/
+└── peelable/
+    ├── vit_base/
+    │   ├── checkpoint_149.pth
+    │   └── mask_table.json
+    ├── vit_small/
+    │   ├── checkpoint_299.pth
+    │   └── mask_table.json
+    └── vit_tiny/
+        ├── checkpoint_299.pth
+        └── mask_table.json
+```
 
 **Example Commands**:
 ```
@@ -100,17 +112,20 @@ Execute `run_test.sh` to comprehensively evaluate the performance of sub-network
 sh run_test.sh
 ```
 
-3. **Fine-tuning (Optional)**
+**Note**: Replace the `--data-path` parameter with the path to your ImageNet2012 dataset (e.g., ImageNet2012/Data/CLS-LOC).
+
+
+### 3. **Fine-tuning (Optional)**
 
 Execute `run_train_peeled.sh` to perform fine-tuning on sub-networks extracted from the SKD Super-Network, optimizing their performance for specific tasks or datasets. This process enhances the capabilities of the pre-structured sub-networks while maintaining their efficient architecture.
-
-**Note**: Replace the `--data-path` parameter with the path to your ImageNet2012 dataset (e.g., ImageNet2012/Data/CLS-LOC).
 
 **Example Commands**:
 ```
 # Fine-Tune extracted sub-networks for enhanced performance
 sh run_train_peeled.sh
 ```
+
+**Note**: Replace the `--data-path` parameter with the path to your ImageNet2012 dataset (e.g., ImageNet2012/Data/CLS-LOC).
 
 
 ## 📝 Citation
